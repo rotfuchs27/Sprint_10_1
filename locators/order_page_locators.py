@@ -1,0 +1,20 @@
+from selenium.webdriver.common.by import By
+
+class OrderPageLocators:
+    ORDER_BLOCK = By.XPATH, ".//div[contains(@class, 'tariff-picker shown')]"
+    TARIFF_TITLES = By.XPATH, ".//div[@class='tcard-title']"
+    TARIFF_ACTIVE = By.XPATH, ".//div[@class='tcard active']"
+    TARIFF_INFO_BUTTON = By.XPATH, ".//div[contains(@class, 'tcard active')]/button"
+    ACTIVE_TARIFF_DESCRIPTION = By.XPATH, ".//div[contains(@class, 'tcard active')]/div[contains(@class, 'show')]//div[@class='i-dPrefix']"
+    PHONE = By.CLASS_NAME, "np-text"
+    PAYMENT_METHOD = By.CLASS_NAME, "pp-text"
+    COMMENT = By.ID, "comment"
+    REQUIREMENTS = By.CLASS_NAME, "reqs-head"
+    NOTEBOOK_TOGGLE = By.XPATH, ".//div[(@class='r-sw-label') and (text()='Столик для ноутбука')]/following::span[@class='slider round']"
+    ENTER_NUMBER_AND_ORDER_BUTTON = By.XPATH, ".//button[@class='smart-button']"
+    ORDER_WINDOW = By.XPATH, ".//div[@class='order-body']"
+    DETAILS_BUTTON = By.XPATH, ".//div[text()='Детали']/preceding-sibling::button"
+    CANCEL_BUTTON = By.XPATH, "//div[contains(text(), 'Отменить')]/preceding-sibling::button"
+    DRIVER_PICTURE = By.XPATH, "//img[contains(@src, 'bender')]"
+    WORK_TARIFF_PRICE = By.XPATH, ".//div[@class='tcard active']/div[@class='tcard-price']"
+    DETAILS_PRICE = By.XPATH, "//div[contains(text(), 'Стоимость - ')]"
